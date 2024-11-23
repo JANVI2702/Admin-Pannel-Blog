@@ -1,0 +1,206 @@
+<%- include('../partials/header') %>
+<div class="page-wrapper">
+  <div class="page-breadcrumb">
+    <div class="row">
+      <div class="col-12 d-flex no-block align-items-center">
+        <h4 class="page-title">Add Admin Data</h4>
+        <div class="ms-auto text-end">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Add Admin
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <form
+            class="form-horizontal"
+            method="post"
+            enctype="multipart/form-data"
+            action=""
+          >
+            <div class="card-body">
+              <h4 class="card-title">Admin Info</h4>
+              <div class="form-group row">
+                <label
+                  for="fname"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >first Name</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fname"
+                    name="fname"
+                    placeholder="Last Name Here"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label
+                  for="lname"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Last Name</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lname"
+                    name="lname"
+                    placeholder="Last Name Here"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- email -->
+              <div class="form-group row">
+                <label
+                  for="email"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Email</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email here"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- password -->
+              <div class="form-group row">
+                <label
+                  for="lname"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Password</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    id="password"
+                    placeholder="Password Here"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- gender -->
+              <div class="form-group row">
+                <label
+                  for="cono1"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Gender</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="gender"
+                    value="male"
+                  />
+                  <label class="form-check-label mb-0">Male</label>
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="gender"
+                    value="female"
+                  />
+                  <label class="form-check-label mb-0">Female</label>
+                </div>
+              </div>
+              <!-- hobby -->
+              <div class="form-group row">
+                <label
+                  for="cono1"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Hobby</label
+                >
+                <div class="col-sm-9">
+                  <div class="form-check mr-sm-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="customControlAutosizing1"
+                      name="hobby"
+                      value="dance"
+                    />
+                    <label
+                      class="form-check-label mb-0"
+                      for="customControlAutosizing1"
+                      >Dance</label
+                    >
+                  </div>
+                  <div class="form-check mr-sm-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="customControlAutosizing1"
+                      name="hobby"
+                      value="music"
+                    />
+                    <label
+                      class="form-check-label mb-0"
+                      for="customControlAutosizing1"
+                      >Music</label
+                    >
+                  </div>
+                  <div class="form-check mr-sm-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="customControlAutosizing1"
+                      name="hobby"
+                      value="travelling"
+                    />
+                    <label
+                      class="form-check-label mb-0"
+                      for="customControlAutosizing1"
+                      >Travelling</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- image -->
+              <div class="form-group row">
+                <label class="col-sm-3 text-end control-label col-form-label"
+                  >Image</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="file"
+                    class="form-control"
+                    name="image"
+                    placeholder="image Here"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="border-top">
+                <div class="card-body">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- editor -->
+  </div>
+  <%- include('../partials/footer') %>
+</div>

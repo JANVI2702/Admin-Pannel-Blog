@@ -1,0 +1,94 @@
+<%- include('../partials/header') %>
+<div class="page-wrapper">
+  <div class="page-breadcrumb">
+    <div class="row">
+      <div class="col-12 d-flex no-block align-items-center">
+        <h4 class="page-title">Add Blog Data</h4>
+        <div class="ms-auto text-end">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Add Blog
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <form class="form-horizontal" method="post" action="">
+            <div class="card-body">
+              <h4 class="card-title">Admin Info</h4>
+              <!-- title -->
+              <div class="form-group row">
+                <label
+                  for="title"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Title</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="title"
+                    name="title"
+                    placeholder="Title Name Here"
+                    required
+                  />
+                  <input type="hidden" name="adminId" value="<%=adminId %>" />
+                </div>
+              </div>
+              <!-- content -->
+              <div class="form-group row">
+                <label
+                  for="content"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Content</label
+                >
+                <div class="col-sm-9">
+                  <textarea
+                    type="text"
+                    id="content"
+                    class="form-control"
+                    name="content"
+                  ></textarea>
+                </div>
+              </div>
+              <!-- Author -->
+              <div class="form-group row">
+                <label
+                  for="author"
+                  class="col-sm-3 text-end control-label col-form-label"
+                  >Author</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="author"
+                    name="author"
+                    placeholder="author name here"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="border-top">
+                <div class="card-body">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- editor -->
+  </div>
+  <%- include('../partials/footer') %>
+</div>
