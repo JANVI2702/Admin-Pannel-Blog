@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const AdminCtl = require("../controllers/adminControl");
-const { uploadImage } = require("../middlewares/adminMiddleware");
+const { uploadImage } = require("../middlewares/adminmiddleware");
 
 const adminRouter = Router();
 
